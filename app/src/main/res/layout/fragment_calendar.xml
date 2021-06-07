@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragments.calendar.CalendarFragment"
+    android:id="@+id/calendarFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/workout_calendar"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:id="@+id/monthName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"/>
+        <GridView
+            android:id="@+id/weekDaysGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="7"/>
+        <GridView
+            android:id="@+id/calendarGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="7"/>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.fragments.authentication.RegisterFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textSize="48sp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/commonGray"
+        android:fontFamily="@font/sourcesanspro_bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="@color/commonGray"
+            android:fontFamily="@font/sourcesanspro_light"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in."
+            android:textAllCaps="false"
+            android:layout_marginLeft="5dp"
+            android:textSize="24sp"
+            android:textColor="@color/commonPurple"
+            android:fontFamily="@font/sourcesanspro_bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/commonGray"
+            android:text="Username"
+            android:fontFamily="@font/sourcesanspro_light"/>
+        <EditText
+            android:id="@+id/userNameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/auth_edit_text_style"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/commonGray"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:drawableRight="@drawable/person_icon"
+            android:fontFamily="@font/sourcesanspro_semibold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/commonGray"
+            android:text="E-Mail"
+            android:fontFamily="@font/sourcesanspro_light"/>
+        <EditText
+            android:id="@+id/emailRegister"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/auth_edit_text_style"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/commonGray"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:drawableRight="@drawable/email_icon"
+            android:fontFamily="@font/sourcesanspro_semibold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/commonGray"
+            android:text="Password"
+            android:fontFamily="@font/sourcesanspro_light"/>
+        <EditText
+            android:id="@+id/passwordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/auth_edit_text_style"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/commonGray"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:drawableRight="@drawable/lock_icon"
+            android:fontFamily="@font/sourcesanspro_semibold"/>
+
+        <include android:id="@+id/registerButton" layout="@layout/custom_button"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
